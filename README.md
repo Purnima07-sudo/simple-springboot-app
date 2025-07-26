@@ -1,38 +1,42 @@
-# Simple Spring Boot Application - A Quick Start Guide
+# Simple Spring Boot App
 
-It is an approach to develop spring based application with very less configuration. 
-It provides defaults for code and annotation configuration to quick start new spring projects within no time.
+A basic Spring Boot application demonstrating RESTful APIs, modular backend architecture, and service integration using Java and Maven.
 
-Spring Boot automatically configures required classes depending on the libraries on its classpath.
+This project is a great foundation for building scalable Java-based web applications with clean code structure, and can be extended with authentication, database integration, and Docker deployment.
 
-A spring boot application can be created in three different ways
+---
 
-    Spring boot initialize web interface
+## 🚀 Features
 
-    Spring boot CLI
+- Basic CRUD operations for `User` entity
+- RESTful API using `@RestController`
+- Clean layered architecture: Controller → Service → Repository
+- Environment-based configuration (`application.properties`)
+- Maven build system
 
-    Spring boot using spring tool suite IDE
+---
 
-# Content of Quick Start Guide
+## 🛠️ Tech Stack
 
- - @ExceptionHandler
- - @ControllerAdvice
- - @RestControllerAdvice
- - @ResponseBody
- - application.yaml
- - Interceptor
- - @Component
- - @Service
- - @Repository
- - @Configuration
- - @Bean
- - @Value
- - @ConfigurationProperties
- - How to use multiple Yaml Files
- - @Autowired
- - @Qualifier
- - @Primary
- - @Required
- - Autowire by Properties / Autowire by Name
- - Autowire by Setter / Autowire by Type
- - Autowire by Constructor
+- Java 17
+- Spring Boot
+- Spring Web
+- Maven
+- (Future-ready: Spring Security, PostgreSQL, Swagger, Docker)
+
+---
+
+## 📁 Project Structure
+
+simple-springboot-app/
+├── controller/
+│ └── UserController.java
+├── service/
+│ └── UserService.java
+├── model/
+│ └── User.java
+├── repository/
+│ └── UserRepository.java
+├── config/
+│ └── AppConfig.java
+└── SimpleSpringbootAppApplication.java
